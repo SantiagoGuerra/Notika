@@ -16,6 +16,7 @@ const StyledBadge = styled.div`
   left: 0;
   z-index: ${props => props.theme.frontLevel};
   font-size: ${props => props.theme.extraSmallFontSize};
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, .2);
 `
 
 const Badge = ({props, lenght}) => <StyledBadge {...props}>{lenght}</StyledBadge>
