@@ -3,17 +3,14 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
+import {ThemeProvider} from 'styled-components'
+import theme from '../styled.theme'
 
-import { Button, Welcome } from '@storybook/react/demo';
+import Badge from '../components/Badge'
 
-storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
-
-storiesOf('Button', module)
-  .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
-  .add('with some emoji', () => (
-    <Button onClick={action('clicked')}>
-      <span role="img" aria-label="so cool">
-        😀 😎 👍 💯
-      </span>
-    </Button>
-  ));
+storiesOf('UI', module)
+  .add('Badge', () => (
+    <ThemeProvider theme={theme}>
+      <Badge lenght={12}/>
+    </ThemeProvider>
+  ))
