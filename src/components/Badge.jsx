@@ -11,7 +11,7 @@ const StyledBadge = styled.div`
   align-items: center;
   color: #FFF;
   font-family: ${props => props.theme.fontFamily};
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 0;
   z-index: ${props => props.theme.frontLevel};
