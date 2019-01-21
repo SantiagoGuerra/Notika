@@ -8,7 +8,6 @@ const StyledAvatar = styled.img.attrs({
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  position: relative;
 `
 
 const Avatar = ({url}) => <StyledAvatar url={url}/>
