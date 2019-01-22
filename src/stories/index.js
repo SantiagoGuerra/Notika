@@ -10,6 +10,7 @@ import CategoryItems from '../components/CategoryItems'
 import Categories from '../components/Categories'
 import CategoriesContainer from '../components/CategoriesContainer'
 import AvatarContainer from '../components/AvatarContainer';
+import Text from '../components/Text';
 import Title from '../components/Title';
 import Header from '../components/Header';
 import '../index.css'
@@ -74,7 +75,12 @@ storiesOf('Components', module)
       <Title>Hi, I'm a Title Component</Title>
     </ThemeProvider>
   ))
-  
+  .add('Text', () => (
+    <ThemeProvider theme={theme}>
+      <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel sapien egestas, laoreet sapien eu, eleifend tellus. Cras ut mauris sit amet nunc aliquet mattis in sit amet massa. Sed id nunc eget ligula pulvinar porttitor. Cras sed nisi nec ex tempus vehicula. Ut sollicitudin pellentesque rhoncus. Donec dapibus justo leo, bibendum pharetra tortor feugiat fermentum. Fusce viverra quam a libero scelerisque, id lacinia lacus sollicitudin. Sed eu dignissim magna, nec ullamcorper nunc. Nulla rutrum mauris non nunc efficitur egestas id vitae massa.</Text>
+    </ThemeProvider>
+  ))
+
 storiesOf('UI', module)
   .add('Avatar Container', () => (
     <ThemeProvider theme={theme}>
