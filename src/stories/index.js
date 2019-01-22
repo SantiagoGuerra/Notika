@@ -64,7 +64,7 @@ const notes = [
   {
     title: 'My Dreams',
     text:'Lorem ipsum dolor  sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien egessit amet, consectetur adipiscing elit. Sed vel sapien egestas, laoreet sapien eu, eleifend tellus. Cras ut mauris sit amet nunc aliquet mattis in sit amet massa. Sed id nunc eget ligula pulvinar porttitor. Cras sed nisi nec ex tempus vehicula. Ut sollicitudin pellentesque rhoncus. Donec dapibus justo leo, bibendum pharetra tortor feugiat fermentum. Fusce viverra quam a libero scelerisque, id lacinia lacus sollicitudin. Sed eu dignissim magna, nec ullamcorper nunc. Nulla rutrum mauris non nunc efficitur egestas id vitae massa.',
-    borderColor: '#3420db',
+    borderColor: '#5020db',
     isOpen: false,
   }
 ]

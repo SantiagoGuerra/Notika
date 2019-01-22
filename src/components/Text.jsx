@@ -8,6 +8,7 @@ const StyledTextContainer = styled.div`
   margin-top: ${props => props.theme.normalSpacingSize};
   padding-left: ${props => props.theme.normalSpacingSize};
   padding-right: ${props => props.theme.normalSpacingSize};
+  margin-bottom: ${props => props.theme.normalSpacingSize};
 `
 
 const StyledText = styled.p`
