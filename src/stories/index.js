@@ -18,12 +18,13 @@ import Header from '../components/Header';
 import NoteCounter from '../components/NoteCounter'
 import '../index.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faIgloo, faCoffee, faChevronDown, faChevronUp, faSearch, faPlus} from '@fortawesome/free-solid-svg-icons'
+import { faIgloo, faCoffee, faChevronDown, faChevronUp, faSearch, faPlus, faEllipsisV} from '@fortawesome/free-solid-svg-icons'
 import Search from '../components/Search';
 import Note from '../components/Note';
 import FloatButton from '../components/FloatButton';
+import ButtonEllipsis from '../components/ButtonEllipsis';
 
-library.add(faIgloo, faCoffee, faChevronDown, faChevronUp, faSearch, faPlus)
+library.add(faIgloo, faCoffee, faChevronDown, faChevronUp, faSearch, faPlus, faEllipsisV)
 
 let categories = [
 {
@@ -111,7 +112,11 @@ storiesOf('Components', module)
       <TitleInput/>
     </ThemeProvider>
   ))
-
+  .add('Button Ellipsist', () => (
+    <ThemeProvider theme={theme}>
+      <ButtonEllipsis/>
+    </ThemeProvider>
+  ))
 
 storiesOf('UI', module)
   .add('Avatar Container', () => (
