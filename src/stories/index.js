@@ -17,6 +17,7 @@ import '../index.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faIgloo, faCoffee, faChevronDown, faChevronUp, faSearch} from '@fortawesome/free-solid-svg-icons'
 import Search from '../components/Search';
+import Note from '../components/Note';
 
 library.add(faIgloo, faCoffee, faChevronDown, faChevronUp, faSearch)
 
@@ -99,6 +100,15 @@ storiesOf('UI', module)
   .add('Categories Container', () => (
     <ThemeProvider theme={theme}>
       <CategoriesContainer categories={categories}/>
+    </ThemeProvider>
+  ))
+  .add('Note', () => (
+    <ThemeProvider theme={theme}>
+      <Note 
+        title='My Crucial Education'
+        borderColor='red'
+        text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel sapien egestas, laoreet sapien eu, eleifend tellus. Cras ut mauris sit amet nunc aliquet mattis in sit amet massa. Sed id nunc eget ligula pulvinar porttitor. Cras sed nisi nec ex tempus vehicula. Ut sollicitudin pellentesque rhoncus. Donec dapibus justo leo, bibendum pharetra tortor feugiat fermentum. Fusce viverra quam a libero scelerisque, id lacinia lacus sollicitudin. Sed eu dignissim magna, nec ullamcorper nunc. Nulla rutrum mauris non nunc efficitur egestas id vitae massa.'
+      />
     </ThemeProvider>
   ))
   
