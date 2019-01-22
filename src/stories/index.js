@@ -12,7 +12,7 @@ import AvatarContainer from '../components/AvatarContainer';
 import Header from '../components/Header';
 import '../index.css'
 
-storiesOf('UI', module)
+storiesOf('Components', module)
   .add('Badge', () => (
     <ThemeProvider theme={theme}>
       <Badge lenght={12}/>
@@ -23,6 +23,8 @@ storiesOf('UI', module)
       <Avatar url='https://www.rmanj.com/wp-content/uploads/2016/08/avatar-img-03.jpg'/>
     </ThemeProvider>
   ))
+  
+storiesOf('UI', module)
   .add('Avatar Container', () => (
     <ThemeProvider theme={theme}>
       <AvatarContainer
@@ -32,6 +34,9 @@ storiesOf('UI', module)
       />
     </ThemeProvider>
   ))
+  
+
+storiesOf('Layout', module)
   .add('Header', () => (
     <ThemeProvider theme={theme}>
       <Header 
@@ -40,4 +45,4 @@ storiesOf('UI', module)
         user='Alan Doe'
       />
     </ThemeProvider>
-  ))
+  ))  
