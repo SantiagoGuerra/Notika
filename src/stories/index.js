@@ -5,12 +5,17 @@ import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 import {ThemeProvider} from 'styled-components'
 import theme from '../styled.theme'
-
 import Badge from '../components/Badge'
 import Avatar from '../components/Avatar';
+import Categories from '../components/Categories'
 import AvatarContainer from '../components/AvatarContainer';
 import Header from '../components/Header';
 import '../index.css'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faIgloo, faCoffee, faChevronDown, faChevronUp} from '@fortawesome/free-solid-svg-icons'
+
+library.add(faIgloo, faCoffee, faChevronDown, faChevronUp)
 
 storiesOf('Components', module)
   .add('Badge', () => (
@@ -24,6 +29,7 @@ storiesOf('Components', module)
     </ThemeProvider>
   ))
   
+  
 storiesOf('UI', module)
   .add('Avatar Container', () => (
     <ThemeProvider theme={theme}>
@@ -32,6 +38,11 @@ storiesOf('UI', module)
         lenght={6}
         user='Alan Doe'
       />
+    </ThemeProvider>
+  ))
+  .add('Button/Categories', () => (
+    <ThemeProvider theme={theme}>
+       <Categories isOpen={true}/>
     </ThemeProvider>
   ))
   
