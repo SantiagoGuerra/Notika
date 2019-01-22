@@ -6,6 +6,7 @@ import theme from '../styled.theme'
 import Badge from '../components/Badge'
 import Avatar from '../components/Avatar';
 import Category from '../components/Category';
+import CategoryItems from '../components/CategoryItems'
 import Categories from '../components/Categories'
 import AvatarContainer from '../components/AvatarContainer';
 import Header from '../components/Header';
@@ -15,6 +16,26 @@ import { faIgloo, faCoffee, faChevronDown, faChevronUp, faSearch} from '@fortawe
 import Search from '../components/Search';
 
 library.add(faIgloo, faCoffee, faChevronDown, faChevronUp, faSearch)
+
+let categories = [
+{
+  name: 'Education',
+  color: '#1abc9c'
+},
+{
+  name: 'Job',
+  color: '#2ecc71'
+},
+{
+  name: 'University',
+  color: '#3498db'
+},
+{
+  name: 'Sport',
+  color: '#3460db'
+}
+]
+
 
 storiesOf('Components', module)
   .add('Badge', () => (
@@ -35,6 +56,11 @@ storiesOf('Components', module)
   .add('Category', () => (
     <ThemeProvider theme={theme}>
       <Category categoryName='Education' pointColor='#2ecc71'/>
+    </ThemeProvider>
+  ))
+  .add('Category Items', () => (
+    <ThemeProvider theme={theme}>
+      <CategoryItems categories={categories}/>
     </ThemeProvider>
   ))
   
