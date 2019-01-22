@@ -8,6 +8,7 @@ const StyledNote = styled.article`
   border-radius: ${props => props.theme.normalBorder};
   padding: ${props => props.theme.normalSpacingSize};
   max-width: 300px;
+  background: white;
 
   &:hover {
     box-shadow: 0px 2px 4px rgba(0,0,0, .2);

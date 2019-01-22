@@ -13,6 +13,7 @@ import AvatarContainer from '../components/AvatarContainer';
 import Text from '../components/Text';
 import Title from '../components/Title';
 import Header from '../components/Header';
+import NoteCounter from '../components/NoteCounter'
 import '../index.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faIgloo, faCoffee, faChevronDown, faChevronUp, faSearch} from '@fortawesome/free-solid-svg-icons'
@@ -105,6 +106,15 @@ storiesOf('UI', module)
   .add('Note', () => (
     <ThemeProvider theme={theme}>
       <Note 
+        title='My Crucial Education'
+        borderColor='red'
+        text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel sapien egestas, laoreet sapien eu, eleifend tellus. Cras ut mauris sit amet nunc aliquet mattis in sit amet massa. Sed id nunc eget ligula pulvinar porttitor. Cras sed nisi nec ex tempus vehicula. Ut sollicitudin pellentesque rhoncus. Donec dapibus justo leo, bibendum pharetra tortor feugiat fermentum. Fusce viverra quam a libero scelerisque, id lacinia lacus sollicitudin. Sed eu dignissim magna, nec ullamcorper nunc. Nulla rutrum mauris non nunc efficitur egestas id vitae massa.'
+      />
+    </ThemeProvider>
+  ))
+  .add('Note', () => (
+    <ThemeProvider theme={theme}>
+      <NoteCounter 
         title='My Crucial Education'
         borderColor='red'
         text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel sapien egestas, laoreet sapien eu, eleifend tellus. Cras ut mauris sit amet nunc aliquet mattis in sit amet massa. Sed id nunc eget ligula pulvinar porttitor. Cras sed nisi nec ex tempus vehicula. Ut sollicitudin pellentesque rhoncus. Donec dapibus justo leo, bibendum pharetra tortor feugiat fermentum. Fusce viverra quam a libero scelerisque, id lacinia lacus sollicitudin. Sed eu dignissim magna, nec ullamcorper nunc. Nulla rutrum mauris non nunc efficitur egestas id vitae massa.'

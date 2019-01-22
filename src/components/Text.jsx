@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledTextContainer = styled.div`
-  height: ${props => props.isOpen ? 'auto' : '120px'};
-  overflow: ${props => props.isOpen ? 'visible' : 'hidden'};
+  height: ${props => props.isOpen ? '400px' : '120px'};
+  overflow: ${props => props.isOpen ? 'auto' : 'hidden'};
   position: relative;
   margin-top: ${props => props.theme.normalSpacingSize};
 `
