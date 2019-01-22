@@ -8,6 +8,7 @@ import Avatar from '../components/Avatar';
 import Category from '../components/Category';
 import CategoryItems from '../components/CategoryItems'
 import Categories from '../components/Categories'
+import CategoriesContainer from '../components/CategoriesContainer'
 import AvatarContainer from '../components/AvatarContainer';
 import Header from '../components/Header';
 import '../index.css'
@@ -20,19 +21,23 @@ library.add(faIgloo, faCoffee, faChevronDown, faChevronUp, faSearch)
 let categories = [
 {
   name: 'Education',
-  color: '#1abc9c'
+  color: '#1abc9c',
+  userInterest: true
 },
 {
   name: 'Job',
-  color: '#2ecc71'
+  color: '#2ecc71',
+  userInterest: true
 },
 {
   name: 'University',
-  color: '#3498db'
+  color: '#3498db',
+  userInterest: true
 },
 {
   name: 'Sport',
-  color: '#3460db'
+  color: '#3460db',
+  userInterest: true
 }
 ]
 
@@ -77,6 +82,11 @@ storiesOf('UI', module)
   .add('Button/Categories', () => (
     <ThemeProvider theme={theme}>
        <Categories isOpen={true}/>
+    </ThemeProvider>
+  ))
+  .add('Categories Container', () => (
+    <ThemeProvider theme={theme}>
+      <CategoriesContainer categories={categories}/>
     </ThemeProvider>
   ))
   

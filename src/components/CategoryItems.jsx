@@ -6,14 +6,18 @@ const StyledCategoryItems = styled.div`
   margin-top: ${props => props.theme.normalSpacingSize};
   display: flex
   flex-direction: column;
+  width: 100%;
 `
 
 
 const CategoryItems = ({categories}) => (
   <StyledCategoryItems categories>
-    {categories.map(category => (
-      <Category categoryName={category.name} pointColor={category.color}/>
-    ))}
+    {
+      categories.filter(category => category.userInterest)
+        .map(category => (
+          <Category categoryName={category.name} pointColor={category.color}/>
+        ))
+    }
   </StyledCategoryItems>
 )
 
