@@ -6,7 +6,6 @@ import Text from './Text'
 const StyledNote = styled.article`
   border: 3px solid ${props => props.borderColor};
   border-radius: ${props => props.theme.normalBorder};
-  padding: ${props => props.theme.normalSpacingSize};
   max-width: 300px;
   background: white;
 
@@ -18,7 +17,7 @@ const StyledNote = styled.article`
 
 const Note = ({borderColor, title, text, isOpen}) => (
   <StyledNote borderColor={borderColor}>
-    <Title>
+    <Title isopen={isOpen}>
       {title}
     </Title>
     <Text isOpen={isOpen}>
