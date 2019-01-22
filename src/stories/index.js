@@ -5,6 +5,7 @@ import {ThemeProvider} from 'styled-components'
 import theme from '../styled.theme'
 import Badge from '../components/Badge'
 import Avatar from '../components/Avatar';
+import NoteContainer from '../components/NoteContainer'
 import Category from '../components/Category';
 import CategoryItems from '../components/CategoryItems'
 import Categories from '../components/Categories'
@@ -46,6 +47,27 @@ let categories = [
 }
 ]
 
+
+const notes = [
+  {
+    title: 'Education',
+    text:'Lorem ipsum dolor  sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien egessit amet, consectetur adipiscing elit. Sed vel sapien egestas, laoreet sapien eu, eleifend tellus. Cras ut mauris sit amet nunc aliquet mattis in sit amet massa. Sed id nunc eget ligula pulvinar porttitor. Cras sed nisi nec ex tempus vehicula. Ut sollicitudin pellentesque rhoncus. Donec dapibus justo leo, bibendum pharetra tortor feugiat fermentum. Fusce viverra quam a libero scelerisque, id lacinia lacus sollicitudin. Sed eu dignissim magna, nec ullamcorper nunc. Nulla rutrum mauris non nunc efficitur egestas id vitae massa.',
+    borderColor: '#3450db',
+    isOpen: false,
+  },
+  {
+    title: 'Job',
+    text:'Lorem ipsum dolor  sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien egessit amet, consectetur adipiscing elit. Sed vel sapien egestas, laoreet sapien eu, eleifend tellus. Cras ut mauris sit amet nunc aliquet mattis in sit amet massa. Sed id nunc eget ligula pulvinar porttitor. Cras sed nisi nec ex tempus vehicula. Ut sollicitudin pellentesque rhoncus. Donec dapibus justo leo, bibendum pharetra tortor feugiat fermentum. Fusce viverra quam a libero scelerisque, id lacinia lacus sollicitudin. Sed eu dignissim magna, nec ullamcorper nunc. Nulla rutrum mauris non nunc efficitur egestas id vitae massa.',
+    borderColor: '#3498db',
+    isOpen: false,
+  },
+  {
+    title: 'My Dreams',
+    text:'Lorem ipsum dolor  sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien eges sit amet, consectetur adipiscing elit. Sed vel sapien egessit amet, consectetur adipiscing elit. Sed vel sapien egestas, laoreet sapien eu, eleifend tellus. Cras ut mauris sit amet nunc aliquet mattis in sit amet massa. Sed id nunc eget ligula pulvinar porttitor. Cras sed nisi nec ex tempus vehicula. Ut sollicitudin pellentesque rhoncus. Donec dapibus justo leo, bibendum pharetra tortor feugiat fermentum. Fusce viverra quam a libero scelerisque, id lacinia lacus sollicitudin. Sed eu dignissim magna, nec ullamcorper nunc. Nulla rutrum mauris non nunc efficitur egestas id vitae massa.',
+    borderColor: '#3420db',
+    isOpen: false,
+  }
+]
 
 storiesOf('Components', module)
   .add('Badge', () => (
@@ -137,4 +159,11 @@ storiesOf('Layout', module)
         user='Alan Doe'
       />
     </ThemeProvider>
-  ))  
+  ))
+  .add('Notes Container', () => (
+    <ThemeProvider theme={theme}>
+      <NoteContainer
+        notes={notes}
+      />
+    </ThemeProvider>
+  ))    
