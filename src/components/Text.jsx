@@ -6,6 +6,8 @@ const StyledTextContainer = styled.div`
   overflow: ${props => props.isOpen ? 'auto' : 'hidden'};
   position: relative;
   margin-top: ${props => props.theme.normalSpacingSize};
+  padding-left: ${props => props.theme.normalSpacingSize};
+  padding-right: ${props => props.theme.normalSpacingSize};
 `
 
 const StyledText = styled.p`
