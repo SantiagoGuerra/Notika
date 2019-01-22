@@ -7,6 +7,7 @@ import Badge from '../components/Badge'
 import Avatar from '../components/Avatar';
 import NoteContainer from '../components/NoteContainer'
 import Category from '../components/Category';
+import TitleInput from '../components/TitleInput'
 import CategoryItems from '../components/CategoryItems'
 import Categories from '../components/Categories'
 import CategoriesContainer from '../components/CategoriesContainer'
@@ -105,6 +106,12 @@ storiesOf('Components', module)
       <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel sapien egestas, laoreet sapien eu, eleifend tellus. Cras ut mauris sit amet nunc aliquet mattis in sit amet massa. Sed id nunc eget ligula pulvinar porttitor. Cras sed nisi nec ex tempus vehicula. Ut sollicitudin pellentesque rhoncus. Donec dapibus justo leo, bibendum pharetra tortor feugiat fermentum. Fusce viverra quam a libero scelerisque, id lacinia lacus sollicitudin. Sed eu dignissim magna, nec ullamcorper nunc. Nulla rutrum mauris non nunc efficitur egestas id vitae massa.</Text>
     </ThemeProvider>
   ))
+  .add('Title Input', () => (
+    <ThemeProvider theme={theme}>
+      <TitleInput/>
+    </ThemeProvider>
+  ))
+
 
 storiesOf('UI', module)
   .add('Avatar Container', () => (
