@@ -10,6 +10,7 @@ import CategoryItems from '../components/CategoryItems'
 import Categories from '../components/Categories'
 import CategoriesContainer from '../components/CategoriesContainer'
 import AvatarContainer from '../components/AvatarContainer';
+import Title from '../components/Title';
 import Header from '../components/Header';
 import '../index.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -66,6 +67,11 @@ storiesOf('Components', module)
   .add('Category Items', () => (
     <ThemeProvider theme={theme}>
       <CategoryItems categories={categories}/>
+    </ThemeProvider>
+  ))
+  .add('Title', () => (
+    <ThemeProvider theme={theme}>
+      <Title>Hi, I'm a Title Component</Title>
     </ThemeProvider>
   ))
   
