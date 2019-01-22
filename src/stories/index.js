@@ -9,6 +9,8 @@ import theme from '../styled.theme'
 import Badge from '../components/Badge'
 import Avatar from '../components/Avatar';
 import AvatarContainer from '../components/AvatarContainer';
+import Header from '../components/Header';
+import '../index.css'
 
 storiesOf('UI', module)
   .add('Badge', () => (
@@ -24,6 +26,15 @@ storiesOf('UI', module)
   .add('Avatar Container', () => (
     <ThemeProvider theme={theme}>
       <AvatarContainer
+        url='https://www.rmanj.com/wp-content/uploads/2016/08/avatar-img-03.jpg'
+        lenght={6}
+        user='Alan Doe'
+      />
+    </ThemeProvider>
+  ))
+  .add('Header', () => (
+    <ThemeProvider theme={theme}>
+      <Header 
         url='https://www.rmanj.com/wp-content/uploads/2016/08/avatar-img-03.jpg'
         lenght={6}
         user='Alan Doe'

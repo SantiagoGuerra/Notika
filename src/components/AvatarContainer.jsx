@@ -4,8 +4,6 @@ import Badge from './Badge'
 import styled from 'styled-components'
 
 const StyledAvatarContainer = styled.div`
-  background: 'red';
-  /* border: 2px solid #FFF; */
   display: inline-flex;
   align-items: center;
   height: 40px;
@@ -14,7 +12,7 @@ const StyledAvatarContainer = styled.div`
 `
 
 const StyledAvatarName = styled.p`
-  color: ${props => props.theme.mainColor};
+  color: #FFF;
   font-size: ${props => props.theme.smallFontSize};
   margin-left: ${props => props.theme.smallSpacingSize};
   font-family: ${props => props.theme.fontFamily};
