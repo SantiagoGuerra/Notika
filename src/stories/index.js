@@ -16,11 +16,12 @@ import Header from '../components/Header';
 import NoteCounter from '../components/NoteCounter'
 import '../index.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faIgloo, faCoffee, faChevronDown, faChevronUp, faSearch} from '@fortawesome/free-solid-svg-icons'
+import { faIgloo, faCoffee, faChevronDown, faChevronUp, faSearch, faPlus} from '@fortawesome/free-solid-svg-icons'
 import Search from '../components/Search';
 import Note from '../components/Note';
+import FloatButton from '../components/FloatButton';
 
-library.add(faIgloo, faCoffee, faChevronDown, faChevronUp, faSearch)
+library.add(faIgloo, faCoffee, faChevronDown, faChevronUp, faSearch, faPlus)
 
 let categories = [
 {
@@ -121,7 +122,11 @@ storiesOf('UI', module)
       />
     </ThemeProvider>
   ))
-  
+  .add('Float Button', () => (
+    <ThemeProvider theme={theme}>
+      <FloatButton/>
+    </ThemeProvider>
+  ))
 
 storiesOf('Layout', module)
   .add('Header', () => (
