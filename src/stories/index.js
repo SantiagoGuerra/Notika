@@ -5,6 +5,7 @@ import {ThemeProvider} from 'styled-components'
 import theme from '../styled.theme'
 import Badge from '../components/Badge'
 import Avatar from '../components/Avatar';
+import Category from '../components/Category';
 import Categories from '../components/Categories'
 import AvatarContainer from '../components/AvatarContainer';
 import Header from '../components/Header';
@@ -31,7 +32,11 @@ storiesOf('Components', module)
       <Search/>
     </ThemeProvider>
   ))
-  
+  .add('Category', () => (
+    <ThemeProvider theme={theme}>
+      <Category categoryName='Education' pointColor='#2ecc71'/>
+    </ThemeProvider>
+  ))
   
 storiesOf('UI', module)
   .add('Avatar Container', () => (
