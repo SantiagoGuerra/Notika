@@ -5,14 +5,15 @@ const StyledTitleInput = styled.input.attrs({
   placeholder: 'Your Title'
 })`
   height: 24px;
-  width: 300px;
+  width: 90%;
   font-family: ${props => props.theme.fontFamily};
   color: ${props => props.theme.darkColor};
   border: .5px solid ${props => props.theme.mainColor};
   border-radius: 12px;
   padding-left: ${props => props.theme.normalSpacingSize};
   font-size: ${props => props.theme.smallFontSize};
-
+  margin-right: ${props => props.theme.smallSpacingSize};
+  
   &:focus {
     outline: none;
     box-shadow: 0px 2px 4px rgba(0,0,0, .2);
