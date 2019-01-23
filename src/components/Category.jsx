@@ -11,6 +11,16 @@ const StyledCategory = styled.div`
     background: #eee;
     cursor: pointer;
     border-radius: 0px 12px 12px 0px;
+
+    @media screen and (min-width: 760px){
+    border-radius: 0px 16px 16px 0px;      
+    }
+  }
+
+
+  @media screen and (min-width: 760px){
+  height: 32px;    
+  
   }
 `
 

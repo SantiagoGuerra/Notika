@@ -4,7 +4,7 @@ import Category from './Category'
 
 const StyledCategoryItems = styled.div`
   margin-top: ${props => props.theme.normalSpacingSize};
-  display: flex
+  display: flex;
   flex-direction: column;
   width: 100%;
 `
