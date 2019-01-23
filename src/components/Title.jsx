@@ -6,6 +6,10 @@ const StyledTitle = styled.h2`
   color: ${props => props.theme.darkColor};
   font-family: ${props => props.theme.fontFamily};
   display: ${props => props.isOpen ? 'fixed' : 'block'};
+
+  @media screen and (min-width: 760px) {
+    font-size: ${props => props.theme.largeFontSize};    
+  }
 `
 const StyledTitleContainer = styled.div`
   width: 100%;
