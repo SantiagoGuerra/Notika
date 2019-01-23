@@ -24,6 +24,11 @@ const StyledNoteText = styled.textarea.attrs({
   ::placeholder {
     color: ${props => props.theme.lightColor};
   }
+
+  @media screen and (min-width: 760px) {
+    border-radius: 16px;
+    font-size: ${props => props.theme.normalFontSize};    
+  }
 `
 
 const NoteText = ({}) => (
