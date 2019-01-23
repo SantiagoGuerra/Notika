@@ -23,6 +23,10 @@ const StyledForm = styled.form`
   background: #FFF;
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (min-width: 760px){
+    width: 500px;    
+  }
 `
 
 const FormItem = styled.div`

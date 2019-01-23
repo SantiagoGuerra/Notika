@@ -22,6 +22,12 @@ const StyledTitleInput = styled.input.attrs({
   ::placeholder {
     color: ${props => props.theme.lightColor};
   }
+
+  @media screen and (min-width: 760px) {
+    font-size: ${props => props.theme.normalFontSize};
+    height: 32px;
+    border-radius: 16px;
+  }
 `
 
 const TitleInput = ({}) => (

@@ -11,6 +11,7 @@ const StyledNote = styled.article`
   position: relative;
   overflow: hidden;
   margin-top: ${props => props.theme.normalSpacingSize};
+  margin-left: ${props => props.theme.normalSpacingSize};
 
   &:hover {
     box-shadow: 0px 2px 4px rgba(0,0,0, .2);

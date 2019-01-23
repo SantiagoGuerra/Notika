@@ -8,18 +8,23 @@ import Avatar from '../components/Avatar';
 import NoteContainer from '../components/NoteContainer'
 import Category from '../components/Category';
 import TitleInput from '../components/TitleInput'
+import AddCategory from '../components/AddCategory'
+import AddCategoryContainer from '../components/AddCategoryContainer'
 import CategoryItems from '../components/CategoryItems'
 import Categories from '../components/Categories'
 import CategoriesContainer from '../components/CategoriesContainer'
 import AvatarContainer from '../components/AvatarContainer';
+import Form from '../components/Form';
 import Text from '../components/Text';
 import Title from '../components/Title';
+import NoteText from '../components/NoteText';
 import Header from '../components/Header';
 import NoteCounter from '../components/NoteCounter'
 import '../index.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faIgloo, faCoffee, faChevronDown, faChevronUp, faSearch, faPlus, faEllipsisV} from '@fortawesome/free-solid-svg-icons'
 import Search from '../components/Search';
+import Button from '../components/Button';
 import Note from '../components/Note';
 import FloatButton from '../components/FloatButton';
 import ButtonEllipsis from '../components/ButtonEllipsis';
@@ -112,9 +117,31 @@ storiesOf('Components', module)
       <TitleInput/>
     </ThemeProvider>
   ))
-  .add('Button Ellipsist', () => (
+  .add('Button Ellipsis', () => (
     <ThemeProvider theme={theme}>
       <ButtonEllipsis/>
+    </ThemeProvider>
+  ))
+  .add('Note Text', () => (
+    <ThemeProvider theme={theme}>
+      <NoteText/>
+    </ThemeProvider>
+  ))
+  .add('Button', () => (
+    <ThemeProvider theme={theme}>
+    <div>
+    <Button>
+        Create
+      </Button>
+      <Button opposite>
+        Cancel
+      </Button>
+    </div>
+    </ThemeProvider>
+  ))
+  .add('Add Category', () => (
+    <ThemeProvider theme={theme}>
+      <AddCategory/>
     </ThemeProvider>
   ))
 
@@ -159,6 +186,16 @@ storiesOf('UI', module)
   .add('Float Button', () => (
     <ThemeProvider theme={theme}>
       <FloatButton/>
+    </ThemeProvider>
+  ))
+  .add('Form', () => (
+    <ThemeProvider theme={theme}>
+      <Form />
+    </ThemeProvider>
+  ))
+  .add('Add Category Container', () => (
+    <ThemeProvider theme={theme}>
+      <AddCategoryContainer categories={categories}/>
     </ThemeProvider>
   ))
 

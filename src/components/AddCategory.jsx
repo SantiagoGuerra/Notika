@@ -25,6 +25,12 @@ const StyledAddCategoryInput = styled.input.attrs({
   &:focus {
     outline: none;
   }
+
+  @media screen and (min-width: 760px) {
+    font-size: ${props => props.theme.normalFontSize};
+    height: 32px;
+    border-radius: 16px 0px 0px 16px;    
+  }
 `
 
 const StyledAddCategoryButton = styled.button`
@@ -42,6 +48,11 @@ const StyledAddCategoryButton = styled.button`
   &:hover {
     opacity: .4;
     cursor: pointer;
+  }
+
+  @media screen and (min-width: 760px) {
+    height: 32px;
+    border-radius: 0px 16px 16px 0px;    
   }
 `
 

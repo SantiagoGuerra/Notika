@@ -19,6 +19,10 @@ const StyledButton = styled.button`
   &:hover {
     cursor: pointer;
   }
+
+  @media screen and (min-width: 760px) {
+    font-size: ${props => props.theme.normalFontSize};
+  }
 ` 
 
 const Button = ({children, opposite}) => (

@@ -4,7 +4,8 @@ import Note from './Note'
 
 const StyledNoteContainer = styled.section`
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: ${props => props.theme.normalSpacingSize};
 `
 

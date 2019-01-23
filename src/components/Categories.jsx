@@ -24,12 +24,21 @@ const StyledValue = styled.p`
   color: ${props => props.theme.mainColor};
   font-size: ${props => props.theme.smallFontSize};
   margin-right: ${props => props.theme.smallSpacingSize};
+
+  @media screen and (min-width: 760px) {
+    font-size: ${props => props.theme.normalFontSize};
+  }
 `
 
 const StyledIcon = styled.div`
   width: ${props => props.theme.normalIconSize};
   height: ${props => props.theme.normalIconSize};
   color: ${props => props.theme.mainColor};
+
+  @media screen and (min-width: 760px) {
+    width: ${props => props.theme.largeIconSize};
+    height: ${props => props.theme.largeIconSize};
+  }  
 `
 
 const Categories = ({children, isOpen}) => (
