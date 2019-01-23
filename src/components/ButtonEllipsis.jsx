@@ -15,7 +15,12 @@ const StyledButtonEllipsis = styled.button`
   &:hover {
     cursor: pointer;
   }
-`
+
+  @media screen and (min-width: 760px) {
+    height: 32px;
+    width: 32px;
+  }
+ `
 
 const ButtonEllipsis = ({}) => (
   <StyledButtonEllipsis>
