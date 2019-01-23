@@ -5,7 +5,7 @@ const StyledNoteText = styled.textarea.attrs({
   placeholder: 'Your Note'
 })`
   height: 200px;
-  width: 300px;
+  width: 100%;
   font-family: ${props => props.theme.fontFamily};
   color: ${props => props.theme.darkColor};
   border: .5px solid ${props => props.theme.mainColor};
