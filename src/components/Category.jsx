@@ -26,6 +26,10 @@ const StyledPoint = styled.div`
 const StyledText = styled.p`
   font-family: ${props => props.theme.fontFamily};
   font-size: ${props => props.theme.smallFontSize};
+
+  @media screen and (min-width: 760px){
+    font-size: ${props => props.theme.normalFontSize};    
+  }
 `
 
 const Category = ({categoryName, pointColor}) => (
