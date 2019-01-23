@@ -16,7 +16,10 @@ const StyledText = styled.p`
   color: black;
   font-family: ${props => props.theme.fontFamily};
   text-overflow: ellipsis;
-  
+
+  @media screen and (min-width: 760px) {
+    font-size: ${props => props.theme.normalFontSize};    
+  }
 `
 
 const Text = ({children, isOpen}) => (
