@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const StyledAvatar = styled.img.attrs({
   src: props => props.url
 })`
-  border: 2px solid #FFF;
+  /* border: 2px solid #FFF; */
   height: 40px;
   width: 40px;
   border-radius: 50%;
