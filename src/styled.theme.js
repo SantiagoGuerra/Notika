@@ -14,7 +14,7 @@ theme.categorieColors = ['#1abc9c', '#2ecc71', '#3498db', '#9b59b6', '#16a085', 
 // Typography
 
 // Font-Family
-theme.fontFamily = `'Raleway', Helvetica, sans-serif`
+theme.fontFamily = `'Poppins', sans-serif`
 // Scale - 1.414
 theme.superSmallFontSize = rem(5.66)
 theme.extraSmallFontSize = rem(8)
