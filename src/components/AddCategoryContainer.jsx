@@ -12,6 +12,10 @@ const StyledCategoriesContainer = styled.div`
   align-items: center;
   border-radius: ${props => props.theme.normalBorder};
   width: 260px;
+
+  @media screen and (min-width:760px) {
+    width: 300px;
+  }
 `
 const AddCategoryContainer = ({categories}) => (
   <StyledCategoriesContainer>
