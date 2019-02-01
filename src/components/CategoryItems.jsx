@@ -13,9 +13,9 @@ const StyledCategoryItems = styled.div`
 const CategoryItems = ({categories}) => (
   <StyledCategoryItems categories>
     {
-      categories.filter(category => category.userInterest)
-        .map(category => (
-          <Category categoryName={category.name} pointColor={category.color}/>
+      categories.
+        map(category => (
+          <Category categoryName={category.name} pointColor={category.color} key={category.id}/>
         ))
     }
   </StyledCategoryItems>
