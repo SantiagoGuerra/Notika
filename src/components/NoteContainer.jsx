@@ -14,10 +14,11 @@ const NoteContainer = ({notes}) => (
   <StyledNoteContainer>
     {notes.map(note => (
       <Note 
+        key= {note.id}
         title={note.title}
         text={note.text}
         isOpen={note.isOpen}
-        borderColor={note.borderColor}
+        borderColor={note.category.color}
       />
     ))}
   </StyledNoteContainer>
