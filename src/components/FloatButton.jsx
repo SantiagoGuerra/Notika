@@ -26,7 +26,10 @@ const StyledFloatButton = styled.button`
   justify-content: center;
   align-items: center;
   border: none;
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: ${props => props.theme.normalSpacingSize};
   &:hover {
     cursor: pointer;
   }
@@ -36,8 +39,8 @@ const IconContainer = styled.span`
     animation: ${up} 1200ms ease-in-out infinite alternate;
 `
 
-const FloatButton = ({}) => (
-  <StyledFloatButton>
+const FloatButton = () => (
+  <StyledFloatButton >
     <IconContainer>
       <FontAwesomeIcon icon='plus' style={{fontSize: '20px'}}/>
     </IconContainer>
