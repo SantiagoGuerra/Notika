@@ -9,7 +9,9 @@ import Form from './Form'
 const Main = ({
   formIsOpen,
   categoryButtonIsOpen,
-  notes
+  notes,
+  showForm,
+  hideForm
 }) => (
   <React.Fragment>
     <Center>
@@ -28,8 +30,8 @@ const Main = ({
     />
     {
       (formIsOpen) 
-        ? <Form/>
-        : <FloatButton/>
+        ? <Form hideForm={hideForm}/>
+        : <FloatButton onClick={showForm}/>
     }
   </React.Fragment>
 )

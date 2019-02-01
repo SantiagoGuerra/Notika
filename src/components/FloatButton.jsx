@@ -39,8 +39,8 @@ const IconContainer = styled.span`
     animation: ${up} 1200ms ease-in-out infinite alternate;
 `
 
-const FloatButton = () => (
-  <StyledFloatButton >
+const FloatButton = ({onClick}) => (
+  <StyledFloatButton onClick={onClick}>
     <IconContainer>
       <FontAwesomeIcon icon='plus' style={{fontSize: '20px'}}/>
     </IconContainer>

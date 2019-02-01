@@ -64,7 +64,8 @@ const notes = (state = initialState.notes, action ) => {
 
 const ui = (state = initialState.ui, action) => {
   switch (action.type) {
-    case 'SOME':
+    case 'SHOW_FORM':
+      return Object.assign({}, state, {formIsOpen: action.showForm})
     default:
       return state
   }

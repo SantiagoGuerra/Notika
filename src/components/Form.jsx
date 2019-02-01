@@ -38,7 +38,7 @@ const FormItem = styled.div`
   justify-content: ${props => props.end ? 'flex-end' : 'flex-start'};
 ` 
 
-const Form = ({}) => (
+const Form = ({hideForm}) => (
   <StyledFormContainer>
     <StyledForm>
       <FormItem>
@@ -48,8 +48,8 @@ const Form = ({}) => (
       <FormItem>
         <NoteText />
       </FormItem>
-      <FormItem end>
-        <Button opposite>
+      <FormItem end="true">
+        <Button opposite hideForm={hideForm}>
           Cancel
         </Button>
         <Button>

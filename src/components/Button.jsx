@@ -25,10 +25,18 @@ const StyledButton = styled.button`
   }
 ` 
 
-const Button = ({children, opposite}) => (
-  <StyledButton opposite={opposite}>
-    {children}
-  </StyledButton>  
-)
+
+
+const Button = ({children, opposite, hideForm}) => {
+
+  return (
+    <StyledButton opposite={opposite} onClick={e => {
+      e.preventDefault()
+      hideForm()
+    }}>
+      {children}
+    </StyledButton>  
+  )
+}
 
 export default Button
