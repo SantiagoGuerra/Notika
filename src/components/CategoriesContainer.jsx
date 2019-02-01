@@ -12,7 +12,7 @@ const StyledCategoriesContainer = styled.div`
   align-items: center;
   border-radius: ${props => props.theme.normalBorder};
   width: 260px;
-
+  margin-top: ${props => props.theme.normalSpacingSize};
   @media screen and (min-width: 760px) {
     width: 300px
   }
