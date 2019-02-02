@@ -22,8 +22,11 @@ const StyledButtonEllipsis = styled.button`
   }
  `
 
-const ButtonEllipsis = ({}) => (
-  <StyledButtonEllipsis>
+const ButtonEllipsis = ({showAddCategory, addCategoryIsOpen}) => (
+  <StyledButtonEllipsis onClick={ e => {
+    e.preventDefault()
+    showAddCategory(true)
+  }}>
     <FontAwesomeIcon icon='ellipsis-v' style={{color: '#FFF'}}/>
   </StyledButtonEllipsis>  
 )

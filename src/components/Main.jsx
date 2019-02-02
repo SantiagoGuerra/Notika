@@ -10,8 +10,11 @@ const Main = ({
   formIsOpen,
   categoryButtonIsOpen,
   notes,
+  showAddCategory,
   showForm,
-  hideForm
+  hideForm,
+  addCategoryIsOpen,
+  hideAddCategory
 }) => (
   <React.Fragment>
     <Center>
@@ -30,7 +33,13 @@ const Main = ({
     />
     {
       (formIsOpen) 
-        ? <Form hideForm={hideForm}/>
+        ? <Form 
+            hideForm={hideForm}
+            addCategoryIsOpen={addCategoryIsOpen}
+            notes={notes}
+            showAddCategory={showAddCategory}
+            hideAddCategory={hideAddCategory}
+          />
         : <FloatButton onClick={showForm}/>
     }
   </React.Fragment>

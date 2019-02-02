@@ -56,10 +56,13 @@ const StyledAddCategoryButton = styled.button`
   }
 `
 
-const AddCategory = ({}) => (
+const AddCategory = ({hideAddCategory}) => (
   <StyledAddCategoryContainer>
     <StyledAddCategoryInput/>
-    <StyledAddCategoryButton>
+    <StyledAddCategoryButton onClick={ e => {
+      e.preventDefault()
+      hideAddCategory()
+    }}>
       <FontAwesomeIcon icon='plus'/>
     </StyledAddCategoryButton>
   </StyledAddCategoryContainer>

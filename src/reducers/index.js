@@ -45,7 +45,8 @@ const initialState = {
   ],
   ui: {
     formIsOpen: false,
-    categoryButtonIsOpen: false
+    categoryButtonIsOpen: false,
+    addCategoryIsOpen: false
   },
   user: {
     name: 'Alan Doe',
@@ -66,6 +67,8 @@ const ui = (state = initialState.ui, action) => {
   switch (action.type) {
     case 'SHOW_FORM':
       return Object.assign({}, state, {formIsOpen: action.showForm})
+    case 'SHOW_ADD_CATEGORY':
+      return Object.assign({}, state, {addCategoryIsOpen: action.showAddCategory})
     default:
       return state
   }

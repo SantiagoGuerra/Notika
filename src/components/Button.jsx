@@ -27,12 +27,13 @@ const StyledButton = styled.button`
 
 
 
-const Button = ({children, opposite, hideForm}) => {
+const Button = ({children, opposite, hideForm, hideAddCategory}) => {
 
   return (
     <StyledButton opposite={opposite} onClick={e => {
       e.preventDefault()
       hideForm()
+      hideAddCategory()
     }}>
       {children}
     </StyledButton>  

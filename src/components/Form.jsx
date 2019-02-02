@@ -4,6 +4,7 @@ import TitleInput from './TitleInput'
 import ButtonEllipsis from './ButtonEllipsis'
 import NoteText from './NoteText'
 import Button from './Button'
+import AddCategoryContainer from './AddCategoryContainer'
 
 const StyledFormContainer = styled.div`
   height: 100%;
@@ -38,25 +39,34 @@ const FormItem = styled.div`
   justify-content: ${props => props.end ? 'flex-end' : 'flex-start'};
 ` 
 
-const Form = ({hideForm}) => (
+const Form = ({hideForm, addCategoryIsOpen, notes, showAddCategory, hideAddCategory}) => (
   <StyledFormContainer>
     <StyledForm>
       <FormItem>
         <TitleInput />
-        <ButtonEllipsis />
+        <ButtonEllipsis
+          showAddCategory={showAddCategory}
+          addCategoryIsOpen={addCategoryIsOpen}
+        />
       </FormItem>
       <FormItem>
         <NoteText />
       </FormItem>
       <FormItem end="true">
-        <Button opposite hideForm={hideForm}>
+        <Button opposite hideForm={hideForm} hideAddCategory={hideAddCategory}>
           Cancel
         </Button>
         <Button>
           Create
         </Button>        
       </FormItem>                                          
-    </StyledForm>    
+    </StyledForm>
+    {(addCategoryIsOpen)
+      ? <AddCategoryContainer
+          categories= {notes.map(note => note.category)}
+          hideAddCategory={hideAddCategory}
+        />
+      : undefined}    
   </StyledFormContainer>
 )
 
