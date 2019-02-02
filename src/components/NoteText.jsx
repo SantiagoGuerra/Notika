@@ -31,8 +31,12 @@ const StyledNoteText = styled.textarea.attrs({
   }
 `
 
-const NoteText = ({}) => (
-  <StyledNoteText>
+const NoteText = ({handleTextNote}) => (
+  <StyledNoteText onChange={ e => {
+    let text = e.target.value
+    console.log(text)
+    handleTextNote(text)
+  }}>
     
   </StyledNoteText>
 )

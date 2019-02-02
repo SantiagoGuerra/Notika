@@ -56,9 +56,13 @@ const StyledAddCategoryButton = styled.button`
   }
 `
 
-const AddCategory = ({hideAddCategory}) => (
+const AddCategory = ({hideAddCategory, handleCategory}) => (
   <StyledAddCategoryContainer>
-    <StyledAddCategoryInput/>
+    <StyledAddCategoryInput onChange={e => {
+      let name = e.target.value
+      console.log(name)
+      handleCategory(name)
+    }}/>
     <StyledAddCategoryButton onClick={ e => {
       e.preventDefault()
       hideAddCategory()

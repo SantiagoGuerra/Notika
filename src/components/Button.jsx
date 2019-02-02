@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import uuid from 'uuid'
 
 const StyledButton = styled.button`
   padding: ${props => props.theme.smallSpacingSize} ${props => props.theme.normalSpacingSize};
@@ -25,15 +26,23 @@ const StyledButton = styled.button`
   }
 ` 
 
-
-
-const Button = ({children, opposite, hideForm, hideAddCategory}) => {
+const Button = ({children, opposite, hideForm, hideAddCategory, createNote, note, reset}) => {
 
   return (
     <StyledButton opposite={opposite} onClick={e => {
       e.preventDefault()
+      
+
+      if(opposite) {
+        hideAddCategory()
+      } else {
+        
+      createNote(note)
+      reset()
+      }
+
       hideForm()
-      hideAddCategory()
+     
     }}>
       {children}
     </StyledButton>  

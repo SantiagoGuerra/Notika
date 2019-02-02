@@ -1,4 +1,5 @@
 import {combineReducers} from 'redux'
+import uuid from 'uuid'
 
 const initialState = {
   notes: [
@@ -51,13 +52,27 @@ const initialState = {
   user: {
     name: 'Alan Doe',
     picURL: 'https://www.rmanj.com/wp-content/uploads/2016/08/avatar-img-03.jpg'
+  },
+  note: {
+    id: uuid.v4(),
+    title: '',
+    text: '',
+    category: {
+      name: '',
+      color: 'gray',
+      id: uuid.v4()
+    }
   }
 }
 
 const notes = (state = initialState.notes, action ) => {
   switch(action.type) {
-    case 'SOME_ACTION':
-      return []
+    case 'CREATE_NOTE':
+      console.log(action.note)
+      return [
+        ...state,
+        action.note
+      ]
     default :
       return state 
   }
@@ -83,10 +98,57 @@ const user = (state = initialState.user, action) => {
   }
 }
 
+const note = (state = initialState.note, action ) => {
+  switch (action.type) {
+    case 'TITLE':
+      return Object.assign(
+        {},
+        state,
+        {
+          id: action.id,
+          title: action.title
+        })
+    case 'TEXT':
+        return Object.assign(
+          {},
+          state,
+          {
+            text: action.text
+          }
+        )
+    case 'CATEGORY':
+        return Object.assign(
+          {},
+          state,
+          {
+            category: {
+              name: action.name,
+              color: action.color,
+              id: action.id
+            }
+          }
+        )
+    case 'RESET':
+          return Object.assign({}, state, {
+            id: uuid.v4(),
+            title: '',
+            text: '',
+            category: {
+              name: '',
+              color: 'gray',
+              id: uuid.v4()
+            }
+          })
+    default:
+      return state
+  }
+}
+
 const app = combineReducers({
   notes,
   ui,
-  user
+  user,
+  note
 })
 
 export default app

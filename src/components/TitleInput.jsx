@@ -30,8 +30,13 @@ const StyledTitleInput = styled.input.attrs({
   }
 `
 
-const TitleInput = ({}) => (
-  <StyledTitleInput/>
+
+const TitleInput = ({handleTitleNote}) => (
+  <StyledTitleInput onChange={ e => {
+    let title = e.target.value
+    console.log(title)
+    handleTitleNote(title)
+  }}/>
 )
 
 export default TitleInput

@@ -14,7 +14,13 @@ const Main = ({
   showForm,
   hideForm,
   addCategoryIsOpen,
-  hideAddCategory
+  hideAddCategory,
+  createNote,
+  note,
+  handleTitleNote,
+  handleTextNote,
+  handleCategory,
+  reset
 }) => (
   <React.Fragment>
     <Center>
@@ -39,6 +45,12 @@ const Main = ({
             notes={notes}
             showAddCategory={showAddCategory}
             hideAddCategory={hideAddCategory}
+            createNote={createNote}
+            note={note}
+            handleTitleNote={handleTitleNote}
+            handleTextNote={handleTextNote}
+            handleCategory={handleCategory}
+            reset={reset}
           />
         : <FloatButton onClick={showForm}/>
     }

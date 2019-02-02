@@ -10,12 +10,15 @@ const StyledCategoryItems = styled.div`
 `
 
 
-const CategoryItems = ({categories}) => (
+const CategoryItems = ({categories, handleCategory, hideAddCategory}) => (
   <StyledCategoryItems categories>
     {
-      categories.
-        map(category => (
-          <Category categoryName={category.name} pointColor={category.color} key={category.id}/>
+      categories
+        .filter((category, i ) => {
+            return category != ''  
+        })
+        .map(category => (
+          <Category categoryName={category.name} pointColor={category.color} key={category.id} handleCategory={handleCategory} hideAddCategory={hideAddCategory}/>
         ))
     }
   </StyledCategoryItems>

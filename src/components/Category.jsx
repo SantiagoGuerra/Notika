@@ -42,8 +42,13 @@ const StyledText = styled.p`
   }
 `
 
-const Category = ({categoryName, pointColor}) => (
-  <StyledCategory>
+const Category = ({categoryName, pointColor, handleCategory , hideAddCategory}) => (
+  <StyledCategory onClick={ e => {
+    let name = categoryName
+    let color = pointColor
+    handleCategory(name, color)
+    hideAddCategory()
+  }}>
     <StyledPoint pointColor={pointColor}/>
     <StyledText>
       {categoryName}

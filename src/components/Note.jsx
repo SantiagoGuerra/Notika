@@ -6,7 +6,7 @@ import Text from './Text'
 const StyledNote = styled.article`
   border: 3px solid ${props => props.borderColor};
   border-radius: ${props => props.theme.normalBorder};
-  max-width: 300px;
+  width: 300px;
   background: white;
   position: relative;
   overflow: hidden;

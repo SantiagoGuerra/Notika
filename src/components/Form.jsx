@@ -5,6 +5,8 @@ import ButtonEllipsis from './ButtonEllipsis'
 import NoteText from './NoteText'
 import Button from './Button'
 import AddCategoryContainer from './AddCategoryContainer'
+import uuid from 'uuid'
+import { Object } from 'es6-shim';
 
 const StyledFormContainer = styled.div`
   height: 100%;
@@ -39,24 +41,35 @@ const FormItem = styled.div`
   justify-content: ${props => props.end ? 'flex-end' : 'flex-start'};
 ` 
 
-const Form = ({hideForm, addCategoryIsOpen, notes, showAddCategory, hideAddCategory}) => (
+const Form = ({hideForm, 
+  addCategoryIsOpen, 
+  notes,
+  showAddCategory, 
+  hideAddCategory, 
+  createNote, 
+  note, 
+  handleTitleNote,
+  handleTextNote,
+  handleCategory,
+  reset
+}) => (
   <StyledFormContainer>
     <StyledForm>
       <FormItem>
-        <TitleInput />
+        <TitleInput handleTitleNote={handleTitleNote}/>
         <ButtonEllipsis
           showAddCategory={showAddCategory}
           addCategoryIsOpen={addCategoryIsOpen}
         />
       </FormItem>
       <FormItem>
-        <NoteText />
+        <NoteText handleTextNote={handleTextNote}/>
       </FormItem>
       <FormItem end="true">
         <Button opposite hideForm={hideForm} hideAddCategory={hideAddCategory}>
           Cancel
         </Button>
-        <Button>
+        <Button hideForm={hideForm} hideAddCategory={hideAddCategory} createNote={createNote} note={note} reset={reset}>
           Create
         </Button>        
       </FormItem>                                          
@@ -65,6 +78,7 @@ const Form = ({hideForm, addCategoryIsOpen, notes, showAddCategory, hideAddCateg
       ? <AddCategoryContainer
           categories= {notes.map(note => note.category)}
           hideAddCategory={hideAddCategory}
+          handleCategory={handleCategory}
         />
       : undefined}    
   </StyledFormContainer>

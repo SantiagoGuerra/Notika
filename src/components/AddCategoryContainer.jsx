@@ -18,10 +18,10 @@ const StyledCategoriesContainer = styled.div`
     width: 300px;
   }
 `
-const AddCategoryContainer = ({categories, hideAddCategory}) => (
+const AddCategoryContainer = ({categories, hideAddCategory, handleCategory}) => (
   <StyledCategoriesContainer>
-    <AddCategory hideAddCategory={hideAddCategory}/>
-    <CategoryItems categories={categories}/>
+    <AddCategory hideAddCategory={hideAddCategory} handleCategory={handleCategory}/>
+    <CategoryItems categories={categories} handleCategory={handleCategory} hideAddCategory={hideAddCategory}/>
   </StyledCategoriesContainer>
 )
 
