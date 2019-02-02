@@ -7,6 +7,7 @@ const StyledNote = styled.article`
   border: 3px solid ${props => props.borderColor};
   border-radius: ${props => props.theme.normalBorder};
   width: 300px;
+  height: 250px;
   background: white;
   position: relative;
   overflow: hidden;

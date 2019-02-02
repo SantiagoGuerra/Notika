@@ -1,4 +1,4 @@
-import React from 'react'
+
 import {connect} from 'react-redux'
 import Main from '../components/Main'
 import {showFormAction, 
@@ -15,7 +15,8 @@ const mapState = state => ({
   notes: state.notes,
   formIsOpen: state.ui.formIsOpen,
   addCategoryIsOpen: state.ui.addCategoryIsOpen,
-  note: state.note
+  note: state.note,
+  noteIsOpen: state.ui.noteIsOpen
 })
 
 const mapDispatch = (dispatch, props)=> ({

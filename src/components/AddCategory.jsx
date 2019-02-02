@@ -60,7 +60,6 @@ const AddCategory = ({hideAddCategory, handleCategory}) => (
   <StyledAddCategoryContainer>
     <StyledAddCategoryInput onChange={e => {
       let name = e.target.value
-      console.log(name)
       handleCategory(name)
     }}/>
     <StyledAddCategoryButton onClick={ e => {

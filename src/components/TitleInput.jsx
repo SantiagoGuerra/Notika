@@ -34,7 +34,6 @@ const StyledTitleInput = styled.input.attrs({
 const TitleInput = ({handleTitleNote}) => (
   <StyledTitleInput onChange={ e => {
     let title = e.target.value
-    console.log(title)
     handleTitleNote(title)
   }}/>
 )

@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import uuid from 'uuid'
 
 const StyledButton = styled.button`
   padding: ${props => props.theme.smallSpacingSize} ${props => props.theme.normalSpacingSize};

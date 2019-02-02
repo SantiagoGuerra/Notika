@@ -1,10 +1,8 @@
 import React from 'react'
-import Center from './Center'
-import Categories from './Categories';
-import CategoriesContainer from './CategoriesContainer'
 import NoteContainer from './NoteContainer'
 import FloatButton from './FloatButton';
 import Form from './Form'
+import NoteCounter from './NoteCounter'
 
 const Main = ({
   formIsOpen,
@@ -20,10 +18,11 @@ const Main = ({
   handleTitleNote,
   handleTextNote,
   handleCategory,
-  reset
+  reset,
+  noteIsOpen
 }) => (
   <React.Fragment>
-    <Center>
+    {/* <Center> i am working in this section
       <Categories
         isOpen={categoryButtonIsOpen}
       />
@@ -33,7 +32,7 @@ const Main = ({
         />
       : undefined
       }
-    </Center>
+    </Center> */}
     <NoteContainer 
       notes={notes}
     />
@@ -53,6 +52,13 @@ const Main = ({
             reset={reset}
           />
         : <FloatButton onClick={showForm}/>
+    }
+    {
+      (noteIsOpen)
+        ? <NoteCounter 
+          isOpen={noteIsOpen}
+        />
+        : undefined
     }
   </React.Fragment>
 )

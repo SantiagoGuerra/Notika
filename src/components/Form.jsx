@@ -5,8 +5,6 @@ import ButtonEllipsis from './ButtonEllipsis'
 import NoteText from './NoteText'
 import Button from './Button'
 import AddCategoryContainer from './AddCategoryContainer'
-import uuid from 'uuid'
-import { Object } from 'es6-shim';
 
 const StyledFormContainer = styled.div`
   height: 100%;

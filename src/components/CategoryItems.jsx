@@ -15,7 +15,7 @@ const CategoryItems = ({categories, handleCategory, hideAddCategory}) => (
     {
       categories
         .filter((category, i ) => {
-            return category != ''  
+            return category !== ''  
         })
         .map(category => (
           <Category categoryName={category.name} pointColor={category.color} key={category.id} handleCategory={handleCategory} hideAddCategory={hideAddCategory}/>

@@ -5,53 +5,44 @@ const initialState = {
   notes: [
     {
       id: '12w4',
-      title: 'Example',
+      title: 'JavaScript Book Review',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat aliquet mauris a sollicitudin. Curabitur quis mauris dignissim, egestas arcu eu, maximus ante. Pellentesque vitae suscipit quam. Donec turpis diam, fringilla vitae enim sit amet, commodo ornare enim. Suspendisse ut tempor tellus. Vestibulum congue eros in ligula ornare tempor. Nulla fermentum quam nec sodales sodales. In neque sem, imperdiet sed arcu ut, gravida fermentum mauris. Maecenas pellentesque sem sed diam pharetra, non rhoncus odio sagittis. Aenean vitae euismod nisi. Phasellus vitae justo vel ni',
       category: {
-        name: 'Example',
-        color: 'red',
+        name: 'Programming',
+        color: '#9b59b6',
         id: '1223'
       }
     },
     {
       id: '1rt4',
-      title: 'Example',
+      title: 'Algebra Linear',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat aliquet mauris a sollicitudin. Curabitur quis mauris dignissim, egestas arcu eu, maximus ante. Pellentesque vitae suscipit quam. Donec turpis diam, fringilla vitae enim sit amet, commodo ornare enim. Suspendisse ut tempor tellus. Vestibulum congue eros in ligula ornare tempor. Nulla fermentum quam nec sodales sodales. In neque sem, imperdiet sed arcu ut, gravida fermentum mauris. Maecenas pellentesque sem sed diam pharetra, non rhoncus odio sagittis. Aenean vitae euismod nisi. Phasellus vitae justo vel ni',
       category: {
-        name: 'Example',
-        color: 'red',
-        id: '1l23'
+        name: 'University',
+        color: '#3498db',
+        id: '#3498db'
       }
     },
     {
       id: '12s4',
-      title: 'Example',
+      title: 'Cycling',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat aliquet mauris a sollicitudin. Curabitur quis mauris dignissim, egestas arcu eu, maximus ante. Pellentesque vitae suscipit quam. Donec turpis diam, fringilla vitae enim sit amet, commodo ornare enim. Suspendisse ut tempor tellus. Vestibulum congue eros in ligula ornare tempor. Nulla fermentum quam nec sodales sodales. In neque sem, imperdiet sed arcu ut, gravida fermentum mauris. Maecenas pellentesque sem sed diam pharetra, non rhoncus odio sagittis. Aenean vitae euismod nisi. Phasellus vitae justo vel ni',
       category: {
-        name: 'Example',
-        color: 'red',
+        name: 'Sport',
+        color: '#2ecc71',
         id: '12sf'
-      }
-    },
-    {
-      id: '1124',
-      title: 'Example',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat aliquet mauris a sollicitudin. Curabitur quis mauris dignissim, egestas arcu eu, maximus ante. Pellentesque vitae suscipit quam. Donec turpis diam, fringilla vitae enim sit amet, commodo ornare enim. Suspendisse ut tempor tellus. Vestibulum congue eros in ligula ornare tempor. Nulla fermentum quam nec sodales sodales. In neque sem, imperdiet sed arcu ut, gravida fermentum mauris. Maecenas pellentesque sem sed diam pharetra, non rhoncus odio sagittis. Aenean vitae euismod nisi. Phasellus vitae justo vel ni',
-      category: {
-        name: 'Example',
-        color: 'red',
-        id: '1234'
       }
     }
   ],
   ui: {
     formIsOpen: false,
     categoryButtonIsOpen: false,
-    addCategoryIsOpen: false
+    addCategoryIsOpen: false,
+    noteIsOpen: false
   },
   user: {
-    name: 'Alan Doe',
-    picURL: 'https://www.rmanj.com/wp-content/uploads/2016/08/avatar-img-03.jpg'
+    name: 'Mr. Panda',
+    picURL: 'https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Panda-512.png'
   },
   note: {
     id: uuid.v4(),
