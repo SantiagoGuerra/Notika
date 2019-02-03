@@ -6,7 +6,7 @@ const initialState = {
     {
       id: '12w4',
       title: 'JavaScript Book Review',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat aliquet mauris a sollicitudin. Curabitur quis mauris dignissim, egestas arcu eu, maximus ante. Pellentesque vitae suscipit quam. Donec turpis diam, fringilla vitae enim sit amet, commodo ornare enim. Suspendisse ut tempor tellus. Vestibulum congue eros in ligula ornare tempor. Nulla fermentum quam nec sodales sodales. In neque sem, imperdiet sed arcu ut, gravida fermentum mauris. Maecenas pellentesque sem sed diam pharetra, non rhoncus odio sagittis. Aenean vitae euismod nisi. Phasellus vitae justo vel ni',
+      text: 'Lorem ipsum dolor sit amet, diam pharetra, non rhoncus odio sagittis. Aenean vitae euismod nisi. Phasellus vitae justo vel ni',
       category: {
         name: 'Programming',
         color: '#9b59b6',
@@ -16,7 +16,7 @@ const initialState = {
     {
       id: '1rt4',
       title: 'Algebra Linear',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat aliquet mauris a sollicitudin. Curabitur quis mauris dignissim, egestas arcu eu, maximus ante. Pellentesque vitae suscipit quam. Donec turpis diam, fringilla vitae enim sit amet, commodo ornare enim. Suspendisse ut tempor tellus. Vestibulum congue eros in ligula ornare tempor. Nulla fermentum quam nec sodales sodales. In neque sem, imperdiet sed arcu ut, gravida fermentum mauris. Maecenas pellentesque sem sed diam pharetra, non rhoncus odio sagittis. Aenean vitae euismod nisi. Phasellus vitae justo vel ni',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sem sed diam pharetra, non rhoncus odio sagittis. Aenean vitae euismod nisi. Phasellus vitae justo vel ni',
       category: {
         name: 'University',
         color: '#3498db',
@@ -26,7 +26,7 @@ const initialState = {
     {
       id: '12s4',
       title: 'Cycling',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat aliquet mauris a sollicitudin. Curabitur quis mauris dignissim, egestas arcu eu, maximus ante. Pellentesque vitae suscipit quam. Donec turpis diam, fringilla vitae enim sit amet, commodo ornare enim. Suspendisse ut tempor tellus. Vestibulum congue eros in ligula ornare tempor. Nulla fermentum quam nec sodales sodales. In neque sem, imperdiet sed arcu ut, gravida fermentum mauris. Maecenas pellentesque sem sed diam pharetra, non rhoncus odio sagittis. Aenean vitae euismod nisi. Phasellus vitae justo vel ni',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sem sed diam pharetra, non rhoncus odio sagittis. Aenean vitae euismod nisi. Phasellus vitae justo vel ni',
       category: {
         name: 'Sport',
         color: '#2ecc71',
